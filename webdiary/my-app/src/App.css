@@ -1,0 +1,141 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-family: 'Roboto', sans-serif;
+}
+/* global class */
+.display_flex {
+  display: flex;
+}
+
+header {
+  background-color: rgb(226, 141, 43);
+  padding: 20 px;
+  justify-content: space-between;
+  /* display: flex; */
+}
+/* adding class style using condition */
+header.daymode {
+  background-color: pink;
+}
+header.nightmode {
+  background-color: black;
+}
+
+header .logo {
+  font-size: 25px;
+}
+
+header .nav {
+  /* display: flex; */
+}
+
+header .nav a {
+  color: black;
+  display: block; /* display: block;  koduthal anu evide n=margin set cheyyan pattollu*/
+  margin: 0 5px;
+  padding: 5px;
+}
+
+header ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+header ul a {
+  text-decoration: none;
+}
+.base {
+  padding: 20px;
+  background-color: lightblue;
+  height: 70vh;
+  display: flex;
+  align-items: center;
+  background-image: url('https://plus.unsplash.com/premium_photo-1710849581742-f2151607c745?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Nzd8fG5hdHVyZXxlbnwwfHwwfHx8MA%3D%3D');
+   background-size: cover;
+  background-repeat: no-repeat;
+ 
+}
+
+header .logo {
+  color: rgb(187, 163, 163);
+  padding: 6px 2px;
+  background-color: black;
+  font-size: 20px;
+  border-radius: 5px;
+}
+
+.footer {
+  padding: 20px;
+  background-color: rgb(0, 163, 128);
+}
+.Container-flex {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 20px;
+}
+aside {
+  flex: 1; /* Sidebar takes up less space */
+  background: #f8f9fa;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+/* aside img{
+  max-width: 200px;
+  border-radious=10px
+} */
+
+.favorite-image {
+  width: 100px; /* Set the width */
+  height: 100px; /* Set the height */
+  object-fit: cover; /* Ensures the image scales without distortion */
+  margin: 5px; /* Add spacing between images */
+  border-radius: 8px; /* Optional: Adds rounded corners */
+}
+
+.card-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex: 3; /* Main content takes up more space */
+}
+.card {
+  margin: 20px;
+  position: relative;
+}
+.card img {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+  margin-bottom: 12px;
+  object-fit: cover;
+}
+.CardContainer{
+  display: flex;
+  align-items: center;
+  max-width:500px ;
+  justify-content: center;
+  margin: auto;
+
+}
+.card.active button{
+  background-color: rgb(255, 101, 242);
+}
+.card .icon{
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right:10px ;
+  top: 10px;
+  display: none;
+  }
+  
+  .card.active .icon{
+    display: block;
+  }
+  
